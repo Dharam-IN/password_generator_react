@@ -27,7 +27,7 @@ This application generates random passwords based on user preferences like lengt
 1. Clone this repository.
 2. Navigate to the project directory.
 3. Run `npm install` to install dependencies.
-4. Run `npm start` to start the development server.
+4. Run `npm run dev` to start the development server.
 5. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 ## Author
