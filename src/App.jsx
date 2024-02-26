@@ -1,27 +1,31 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PasswordGene from "./components/PasswordGene";
 import { useEffect, useState } from "react";
-import LoadingSpinner from "./components/LoadingSpinner";
+// import LoadingSpinner from "./components/LoadingSpinner";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    window.onload = () => {
-      setLoading(false);
-    };
+  // useEffect(() => {
+  //   window.onload = () => {
+  //     setLoading(false);
+  //   };
 
-    return () => {
-      window.onload = null;
-    };
-  }, []);
+  //   // setTimeout(()=>{
+  //   //   setLoading(false)
+  //   // }, 2000)
+
+  //   return () => {
+  //     window.onload = null;
+  //   };
+  // }, []);
 
 
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={loading ? <LoadingSpinner /> : <PasswordGene />} />
+        <Route path="/" element={<PasswordGene />} />
       </Routes>
     </BrowserRouter>
     // <div>

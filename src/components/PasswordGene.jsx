@@ -9,6 +9,8 @@ const PasswordGene = () => {
     const [special, setSpecial] = useState(false)
     const [password, setPassword] = useState("")
 
+    let string = "India";
+
     let passwordref = useRef(null)
 
     const PasswordGenerator = useCallback(()=>{
